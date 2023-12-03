@@ -1,0 +1,367 @@
+:root{
+    --main-color: rgb(136, 239, 19);
+    --sub-color1: #c7c8c9;
+    --sub-color2: rgb(1, 137, 1);
+    --sub-color3: #475569;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    background-color: black;
+    font-family: Serif;  
+    scroll-behavior: smooth;  
+}
+
+.container{
+    margin-inline: 1.5rem;
+    /* border: solid 1px var(--main-color); */
+}
+
+.header{
+    color: var(--main-color);
+    text-align:center;
+}
+
+
+.header__list{
+    display: none;
+    
+}
+
+.header__bars{
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+       
+}
+
+.container__bars{
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    
+}
+
+
+.pointer{
+    font-size: 13px;
+    color: var(--sub-color1);
+    cursor: pointer;  
+    background: rgb(2, 99, 2);
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: solid var(--sub-color1);
+    display: inline-block;
+    transition: 0.3s;
+    
+}
+
+.pointer:hover{
+    transform: translateY(-3px);
+    background-color: var(--sub-color1);
+    color: black;
+}
+
+.header__line{
+    border: 1px solid var(--sub-color3);
+}
+
+.header__bulb{
+display: inline;
+color: rgb(254, 253, 253);
+background: none;
+border: none;    
+}
+
+.bi {
+    position: relative;
+    right: 10px;
+    top: 5px
+}
+
+.title{
+    text-align: center;
+    margin-top: 3rem;
+    letter-spacing: -0.05em;
+    line-height: 0.9;    
+    
+}
+
+.tittle_img{
+    width: 7.5rem;
+    height: 8.2rem;
+    border-radius: 50%;
+    max-width: 100%;
+}
+    
+.mainttl,span{
+    font-size: 1.5rem;
+    color: var(--sub-color1);
+
+    /* border: solid 1px var(--main-color); */
+    
+}
+
+.subttl{
+    font-size: 3rem;
+    color: var(--sub-color1);
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+
+span{
+    color: var(--sub-color2)
+
+}
+
+.project__resume{
+    text-align: center;
+    margin: 5px;
+}
+
+.resume__button{
+    font-size: 20px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;  
+    background: rgb(2, 99, 2);
+    border: solid white 1px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s;
+    /* text-align: center; */
+
+}
+
+.resume__button>a{
+    text-decoration: none;
+    color: white;
+    transition: 0.1s;
+    
+}
+
+.resume__button:hover{
+    transform: translateY(-3px);
+    background-color: var(--sub-color1);
+    
+    
+}
+
+.resume__button>a:hover{
+    color: var(--sub-color3);
+}
+
+
+
+
+.projects__list{
+    list-style: none;
+    color: var(--sub-color1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    /* border: solid 1px var(--main-color);*/
+
+    
+}
+
+
+.projects{
+    margin-top: 2rem;
+}
+
+.prjt__img{
+    width: 300px;
+    border: solid 1px var(--sub-color1) ;
+    
+}
+
+.sideeye{
+    height: 400px;
+}
+
+.prjt__pointer{
+    transition: 0.3s;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.prjt__pointer:hover{
+    transform: translateY(-10px);
+}
+
+footer{
+color: var(--sub-color1);
+text-align: center;
+margin-top: 3rem;
+padding: 5px;
+background-color: var(--sub-color2);
+color:black;
+
+}
+
+
+
+
+    @media (max-width: 1091px) {
+
+        .projects__list{
+            gap: 1rem;
+         }
+    }
+
+    @media (max-width: 1042px) {
+
+
+        .projects__list{
+            gap: 2rem;
+            /* justify-content: ;*/
+         }
+
+        .prjt__img {
+            width: 260px;
+        }
+
+        .sideeye {
+            height: 348px;
+            
+        }
+
+    }
+
+    @media (min-width: 1131px) {
+
+    .projects__list{
+        justify-content: space-between;
+        gap: 1.5rem
+    }
+    }
+    
+    @media (max-width: 995px) {
+        .prjt__img{
+            width: 250px;
+        }
+
+        .sideeye {
+            height: 342px;
+        }
+
+    }
+
+    @media (max-width: 925px) {
+
+        .projects__list{
+            flex-direction: row;
+            /* justify-content: center;*/
+            align-items: center;
+         } 
+
+         .prjt__img{
+            width: 230px;
+        }
+
+        .sideeye {
+            height: 329px;
+        }
+
+
+        
+        }
+
+        @media (max-width: 995px) {
+            .prjt__img{
+                width: 250px;
+            }
+    
+            .sideeye {
+                height: 342px;
+            }
+    
+        }
+    
+        @media (min-width: 640px) and (max-width: 925px) {
+    
+            .projects__list{
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+             } 
+    
+             .prjt__img{
+                width: 230px;
+            }
+    
+            .sideeye {
+                height: 329px;
+            }
+    
+            
+            
+            }
+
+            @media (min-width: 641px) and (max-width: 847px) {
+
+                .prjt__img{
+                    width: 300px;
+                    overflow-y: scroll;
+                 }
+
+            }
+
+            @media (min-width: 764px) {
+                .header__list{
+                    list-style: none;
+                    display: flex;
+                    gap: 1.5rem;
+                    justify-content: flex-end;
+                    padding: 1rem;  
+                    /* border: solid 1px var(--main-color); */
+                    
+                }
+
+                .header__bars{
+                    display: none;
+                }
+            }
+
+        @media (max-width: 724px) {
+
+            .projects__list{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 0;
+        
+             } 
+
+             .prjt__img{
+                width: 350px;
+                overflow-y: scroll;
+             }
+
+
+            
+            }
+
+
+
+
+
+
+

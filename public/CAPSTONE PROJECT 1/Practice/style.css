@@ -1,0 +1,54 @@
+
+.header{
+  background-color: indianred;
+  padding: 2px;
+  text-align: center;
+  width: 100%;
+}
+
+.header h2{
+  font-family: Arial, sans-serif;
+  
+}
+
+
+ul{
+  background-color:rgb(96, 96, 223);
+  border-radius: 4px;
+  margin: 20px;
+  
+}
+
+a{
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  
+}
+
+
+.home, a:hover{
+  background-color: black;
+}
+
+@media (max-width: 479px) {
+
+  .container{
+    width: 100%;
+  }
+  
+  ul li{
+    display: block;
+    text-align: center;
+    margin-right: 35px;
+  }
+
+
+}
+
